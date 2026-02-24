@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Django
+db.sqlite3
+local_settings.py
+.env
+
+# Windows/IDE
+desktop.ini
+.vscode/
+.idea/
+
+# Cisco Packet Tracer (якщо є збереження)
+*.tmp
