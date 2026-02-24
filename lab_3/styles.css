@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #4b4b8f; /* Blue-purple from the example */
+    --text-color: #333;
+    --border-color: #4b4b8f; 
+    --dashed-border: #a0a0a0; /* For outer bounds if we want, or simple grey */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px 0;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px dashed var(--dashed-border);
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 10%;
+    margin-bottom: 20px;
+}
+
+.name {
+    margin: 0;
+    font-size: 48px;
+    font-weight: normal;
+    color: var(--primary-color);
+}
+
+.title {
+    margin: 5px 0 0 0;
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--text-color);
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sidebar (Left Column) */
+.sidebar {
+    width: 30%;
+    border-right: 1px solid var(--border-color);
+    padding-right: 20px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.side-section {
+    border-bottom: 1px dashed var(--dashed-border);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-section h3 {
+    text-align: right;
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.side-section p {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.side-section a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.skills-list li {
+    margin-bottom: 4px;
+}
+
+/* Main Content (Right Column) */
+.main-content {
+    width: 70%;
+    padding-left: 20px;
+}
+
+.main-section {
+    border-bottom: 1px dashed var(--dashed-border);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Specific alignments like in the image where title is on left and content on right in the sections themselves */
+.main-section {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.main-section .section-title {
+    width: 25%;
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.main-section .section-content {
+    width: 75%;
+    font-size: 14px;
+}
+
+.main-section .section-content p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.job, .project {
+    margin-bottom: 15px;
+}
+
+.date {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.job-title {
+    margin-bottom: 5px;
+}
+
+.job ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+/* Remove last dashed borders */
+.side-section:last-child,
+.main-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
