@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV & Lab 4 - Chervin Ivan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="theme-switch-wrapper">
+        <label for="theme-toggle">Темна тема</label>
+        <input type="checkbox" id="theme-toggle">
+    </div>
+
+    <!-- Модальне вікно для форми -->
+    <div id="feedback-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h2>Зворотній зв'язок</h2>
+            <form action="https://formspree.io/f/xeelvoqe" method="POST">
+                <div class="form-group">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Номер телефону:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="name">Chervin Ivan</h1>
+            <h2 class="title">Junior Full-Stack Developer</h2>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <section class="section side-section">
+                    <h3 class="section-title">Контакти</h3>
+                    <div class="section-content text-right">
+                        <p>Kyiv, Ukraine</p>
+                        <p>+380 12 345 6789</p>
+                        <p><a href="mailto:chervin.ivan@example.com">chervin.ivan@example.com</a></p>
+                        <p><a href="https://github.com/ivan123456714">github.com/ivan123456714</a></p>
+                    </div>
+                </section>
+
+                <section class="section side-section">
+                    <h3 class="section-title">Освіта</h3>
+                    <div class="section-content text-right">
+                        <p><strong>National University</strong></p>
+                        <p>Faculty of Computer Science</p>
+                        <p>BSc in Software Engineering</p>
+                        <p><em>2021 – Present</em></p>
+                    </div>
+                </section>
+
+                <section class="section side-section">
+                    <h3 class="section-title">Навички</h3>
+                    <div class="section-content text-right">
+                        <ul class="skills-list">
+                            <li>HTML5 / CSS3</li>
+                            <li>JavaScript</li>
+                            <li>React.js</li>
+                            <li>Python 3</li>
+                            <li>Django</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                </section>
+            </aside>
+
+            <main class="main-content">
+                <section class="section main-section">
+                    <h3 class="section-title">Про мене</h3>
+                    <div class="section-content">
+                        <p>Шукаю можливості для розвитку в ролі Junior Full-Stack розробника. Маю базові знання Python,
+                            Django, HTML, CSS та JavaScript. Швидко навчаюсь та люблю створювати веб-додатки.</p>
+                    </div>
+                </section>
+
+                <section class="section main-section">
+                    <h3 class="section-title">Досвід</h3>
+                    <div class="section-content">
+                        <div class="job">
+                            <p class="date">СІЧЕНЬ 2024 – ТЕПЕРІШНІЙ ЧАС</p>
+                            <p class="job-title"><strong>Junior Web Developer Trainee</strong> | Tech StartUp Inc.</p>
+                            <ul>
+                                <li>Допомагав з розробкою RESTful API.</li>
+                                <li>Створював інтерфейси за допомогою React.js.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Коментарі з сервера -->
+                <section class="section main-section" id="employer-comments-section">
+                    <h3 class="section-title">Відгуки</h3>
+                    <div class="section-content" id="comments-container">
+                        <p>Завантаження відгуків...</p>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+
+        <footer class="footer">
+            <h4>Дані про систему</h4>
+            <div id="os-info"></div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
